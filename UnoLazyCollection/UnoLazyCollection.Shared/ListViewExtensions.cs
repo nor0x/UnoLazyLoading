@@ -16,14 +16,14 @@ namespace UnoLazyCollection
 {
 	public static class ListViewExtensions
 	{
-		public static DependencyProperty AddIncrementallyLoadingSupportProperty { get; } = DependencyProperty.RegisterAttached(
-			"AddIncrementallyLoadingSupport",
+		public static DependencyProperty AddLazyLoadingSupportProperty { get; } = DependencyProperty.RegisterAttached(
+			"AddLazyLoadingSupport",
 			typeof(bool),
 			typeof(ListViewExtensions),
-			new PropertyMetadata(default(bool), (d, e) => d.Maybe<ListView>(control => OnAddIncrementallyLoadingSupportChanged(control, e))));
+			new PropertyMetadata(default(bool), (d, e) => d.Maybe<ListView>(control => OnAddLazyLoadingSupportChanged(control, e))));
 
-		public static bool GetAddIncrementallyLoadingSupport(ListView obj) => (bool)obj.GetValue(AddIncrementallyLoadingSupportProperty);
-		public static void SetAddIncrementallyLoadingSupport(ListView obj, bool value) => obj.SetValue(AddIncrementallyLoadingSupportProperty, value);
+		public static bool GetAddLazyLoadingSupport(ListView obj) => (bool)obj.GetValue(AddLazyLoadingSupportProperty);
+		public static void SetAddLazyLoadingSupport(ListView obj, bool value) => obj.SetValue(AddLazyLoadingSupportProperty, value);
 
 		private static DependencyProperty IsIncrementallyLoadingProperty { get; } = DependencyProperty.RegisterAttached(
 			"IsIncrementallyLoading",
@@ -34,7 +34,7 @@ namespace UnoLazyCollection
 		private static bool GetIsIncrementallyLoading(ListView obj) => (bool)obj.GetValue(IsIncrementallyLoadingProperty);
 		private static void SetIsIncrementallyLoading(ListView obj, bool value) => obj.SetValue(IsIncrementallyLoadingProperty, value);
 
-		private static void OnAddIncrementallyLoadingSupportChanged(ListView control, DependencyPropertyChangedEventArgs e)
+		private static void OnAddLazyLoadingSupportChanged(ListView control, DependencyPropertyChangedEventArgs e)
 		{
 			if ((bool)e.NewValue)
 			{

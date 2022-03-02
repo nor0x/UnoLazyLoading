@@ -17,14 +17,14 @@ namespace UnoLazyCollection
 {
 	public static class GridViewExtensions
 	{
-		public static DependencyProperty AddIncrementallyLoadingSupportProperty { get; } = DependencyProperty.RegisterAttached(
-			"AddIncrementallyLoadingSupport",
+		public static DependencyProperty AddLazyLoadingSupportProperty { get; } = DependencyProperty.RegisterAttached(
+			"AddLazyLoadingSupport",
 			typeof(bool),
 			typeof(GridViewExtensions),
-			new PropertyMetadata(default(bool), (d, e) => d.Maybe<GridView>(control => OnAddIncrementallyLoadingSupportChanged(control, e))));
+			new PropertyMetadata(default(bool), (d, e) => d.Maybe<GridView>(control => OnAddLazyLoadingSupportChanged(control, e))));
 
-		public static bool GetAddIncrementallyLoadingSupport(GridView obj) => (bool)obj.GetValue(AddIncrementallyLoadingSupportProperty);
-		public static void SetAddIncrementallyLoadingSupport(GridView obj, bool value) => obj.SetValue(AddIncrementallyLoadingSupportProperty, value);
+		public static bool GetAddLazyLoadingSupport(GridView obj) => (bool)obj.GetValue(AddLazyLoadingSupportProperty);
+		public static void SetAddLazyLoadingSupport(GridView obj, bool value) => obj.SetValue(AddLazyLoadingSupportProperty, value);
 
 		private static DependencyProperty IsIncrementallyLoadingProperty { get; } = DependencyProperty.RegisterAttached(
 			"IsIncrementallyLoading",
@@ -35,7 +35,7 @@ namespace UnoLazyCollection
 		private static bool GetIsIncrementallyLoading(GridView obj) => (bool)obj.GetValue(IsIncrementallyLoadingProperty);
 		private static void SetIsIncrementallyLoading(GridView obj, bool value) => obj.SetValue(IsIncrementallyLoadingProperty, value);
 
-		private static void OnAddIncrementallyLoadingSupportChanged(GridView control, DependencyPropertyChangedEventArgs e)
+		private static void OnAddLazyLoadingSupportChanged(GridView control, DependencyPropertyChangedEventArgs e)
 		{
 			if ((bool)e.NewValue)
 			{

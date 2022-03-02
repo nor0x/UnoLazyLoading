@@ -59,7 +59,7 @@
             ItemsSource="{Binding ListItems}"
             Height="800"
             Width="400"
-            local:ListViewExtensions.AddIncrementallyLoadingSupport="True"
+            local:ListViewExtensions.AddLazyLoadingSupport="True"
             IsItemClickEnabled="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -77,7 +77,7 @@
             ItemsSource="{Binding ListLazyItems}"
             Height="800"
             Width="400"
-            local:ListViewExtensions.AddIncrementallyLoadingSupport="True"
+            local:ListViewExtensions.AddLazyLoadingSupport="True"
             IsItemClickEnabled="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -86,7 +86,7 @@
                         <Image Source="{Binding Image}" />
                     </StackPanel>
                 </DataTemplate>
-            </ListView.ItemTemplate>           
+            </ListView.ItemTemplate>           F
         </ListView>
 
         <GridView
@@ -113,7 +113,7 @@
             Height="800"
             Width="400"
             ItemsSource="{Binding GridLazyItems}"
-            local:GridViewExtensions.AddIncrementallyLoadingSupport="True"
+            local:GridViewExtensions.AddLazyLoadingSupport="True"
             IsItemClickEnabled="True">
             <GridView.ItemTemplate>
                 <DataTemplate>
