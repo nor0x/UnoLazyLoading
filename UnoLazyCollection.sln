@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UnoLazyCollection.Shared", "UnoLazyCollection\UnoLazyCollection.Shared\UnoLazyCollection.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{1BDA28C3-9147-4A17-B272-F331B6ED25F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoLazyCollection.Wasm", "UnoLazyCollection\UnoLazyCollection.Wasm\UnoLazyCollection.Wasm.csproj", "{F172A4E3-BB99-455E-AD61-57D971DA4EA2}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UnoLazyCollection\UnoLazyCollection.Shared\UnoLazyCollection.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		UnoLazyCollection\UnoLazyCollection.Shared\UnoLazyCollection.Shared.projitems*{f172a4e3-bb99-455e-ad61-57d971da4ea2}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|x64.Build.0 = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Debug|x86.Build.0 = Debug|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|ARM.Build.0 = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|ARM64.Build.0 = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|x64.ActiveCfg = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|x64.Build.0 = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|x86.ActiveCfg = Release|Any CPU
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F172A4E3-BB99-455E-AD61-57D971DA4EA2} = {1BDA28C3-9147-4A17-B272-F331B6ED25F5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64E8968B-223D-4899-B4F9-55DF7F285C9F}
+	EndGlobalSection
+EndGlobal
